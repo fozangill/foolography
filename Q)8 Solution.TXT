@@ -1,0 +1,21 @@
+Question: How can the deletion script be automated to run once per day?
+
+Answer: We can do this in many different ways like using cron tab which is known as Scheduling with cron.
+If We use crontab we can automate the script to run once per day. 
+The format of crontab looks like this 
+
+Example: 
+
+sudo crontab -e
+0 3 * * * /usr/bin/php /http/foolography/script.php
+
+Minute – 0 to 59
+Hour – 0 to 23
+Day of month – 1 to 31
+Month of year – Either 1 to 12, or Jan to Dec
+Day of week – 0 to 6, or Sun to Sat
+Command to run
+
+By doing this, PHP script is set to run at 3AM every day in the morning.
+
+The other way of doing it using Windows task scheduler.
